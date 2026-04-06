@@ -1,0 +1,11 @@
+﻿
+> my-project@0.1.0 build C:\Users\pgven\Downloads\RullesIA-main\RullesIA-main
+> next build
+
+Ôû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Ô£ô Compiled successfully in 25.4s
+  Skipping validation of types
+  Collecting page data using 7 workers ...
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.

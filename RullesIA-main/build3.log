@@ -1,0 +1,66 @@
+
+> my-project@0.1.0 build C:\Users\pgven\Downloads\RullesIA-main\RullesIA-main
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\pgven\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\pgven\Downloads\RullesIA-main\RullesIA-main\pnpm-lock.yaml
+
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 3 errors:
+./Downloads/RullesIA-main/RullesIA-main/app/api/analyze/route.ts:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [36mimport[39m [33mGroq[39m [36mfrom[39m [32m"groq-sdk"[39m
+ [90m 2 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m"next/server"[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m pdfParse [36mfrom[39m [32m"pdf-parse"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36mexport[39m [36mconst[39m maxDuration [33m=[39m [35m60[39m
+ [90m 6 |[39m[0m
+
+The export default was not found in module [project]/Downloads/RullesIA-main/RullesIA-main/node_modules/.pnpm/pdf-parse@2.4.5/node_modules/pdf-parse/dist/pdf-parse/esm/index.js [app-route] (ecmascript).
+Did you mean to import Rectangle?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+./Downloads/RullesIA-main/RullesIA-main/app/api/chat/route.ts:5:1
+Export default doesn't exist in target module
+[0m [90m 3 |[39m [36mimport[39m { readFile } [36mfrom[39m [32m"fs/promises"[39m
+ [90m 4 |[39m [36mimport[39m path [36mfrom[39m [32m"path"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m pdfParse [36mfrom[39m [32m"pdf-parse"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mconst[39m maxDuration [33m=[39m [35m60[39m
+ [90m 8 |[39m[0m
+
+The export default was not found in module [project]/Downloads/RullesIA-main/RullesIA-main/node_modules/.pnpm/pdf-parse@2.4.5/node_modules/pdf-parse/dist/pdf-parse/esm/index.js [app-route] (ecmascript).
+Did you mean to import Rectangle?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+./Downloads/RullesIA-main/RullesIA-main/app/api/summarize/route.ts:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [36mimport[39m [33mGroq[39m [36mfrom[39m [32m"groq-sdk"[39m
+ [90m 2 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m"next/server"[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m pdfParse [36mfrom[39m [32m"pdf-parse"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36mexport[39m [36mconst[39m maxDuration [33m=[39m [35m60[39m
+ [90m 6 |[39m[0m
+
+The export default was not found in module [project]/Downloads/RullesIA-main/RullesIA-main/node_modules/.pnpm/pdf-parse@2.4.5/node_modules/pdf-parse/dist/pdf-parse/esm/index.js [app-route] (ecmascript).
+Did you mean to import Rectangle?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (./Downloads/RullesIA-main/RullesIA-main/app/api/analyze/route.ts:3:1)
+    at <unknown> (./Downloads/RullesIA-main/RullesIA-main/app/api/chat/route.ts:5:1)
+    at <unknown> (./Downloads/RullesIA-main/RullesIA-main/app/api/summarize/route.ts:3:1)
+ ELIFECYCLE  Command failed with exit code 1.
