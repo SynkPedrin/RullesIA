@@ -4,3 +4,23 @@ node_modules/
 .next/
 .DS_Store
 .vercel
+
+# v0 runtime files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+
+# build logs
+build.log
+build2.log
+build3.log
+build4.log
+build_error.log
+build_log.txt
+
+# misc
+tsconfig.tsbuildinfo
+vade_mecum.pdf
+test_contract.txt
+tsc_errors.txt
+contract.txt
